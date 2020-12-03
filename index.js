@@ -9,6 +9,9 @@ function anoSanto(n) {
   while (n>2038) {
      n-= 28;
 }
+  while (n<1971) {
+    n+=28;
+  }
   if (n==1971) return true;
   if (n==2020) ;
   if (n==2021) return true;
